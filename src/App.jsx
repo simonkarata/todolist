@@ -6,6 +6,7 @@ function App() {
   const[todos,setTodos]=useState([])
   const [todoValue, setTodoValue] = useState('')
 
+  //keeps curent state of app on reload
   function persistData(newList){
     localStorage.setItem('todos', JSON.stringify({todos: newList})) 
   }
